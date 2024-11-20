@@ -1,11 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alice's Adventures in Wonderland</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">alice's adventures in wonderland</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#author">Author</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#synopsis">Synopsis and Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#publisher">Publisher</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#buy">Buy Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header> <!-- End Header -->
+
+  <!-- Main Sections -->
+  <main class="container-fluid">
+    <!-- Carousel -->
+    <section>
+      <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/fantasy-easter-cover-book.jpg" class="d-block w-100" alt="fantasy easter cover book">
+          </div>
+          <div class="carousel-item">
+            <img src="img/fantasy-easter-bunny-character.jpg" class="d-block w-100" alt="fantasy easter bunny character">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section> <!--End Carousel-->
+
+    <!-- About the Author, Accordion and img Lewis Carroll -->
+    <section id="author" class="py-4 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+
+            <!-- About the Author -->
+            <h2 class="text-center">Lewis Carroll</h2>
+            <p class="lead text-center">
+              Charles Lutwidge Dodgson, better known by his pen name Lewis Carroll, was an English writer,
+              mathematician, and photographer.
+              Born in 1832, he is best known for his beloved works <strong>Alice's Adventures in Wonderland</strong> and
+              <strong>Through the Looking-Glass</strong>.
+            </p><!-- End About the Author -->
+
+            <!-- Accordion -->
+            <div class="accordion accordion-flush" id="accordionAlice">
+              <!-- Tab Panel: 1832: The Birth of Lewis Carroll -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    1832: The Birth of Lewis Carroll
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionAlice">
+                  <div class="accordion-body">
+                    Lewis Carroll, born Charles Lutwidge Dodgson on January 27, 1832, in Daresbury, Cheshire, England,
+                    was the third of eleven children in a highly religious family. His father, a clergyman, encouraged
+                    intellectual pursuits, and Carroll showed an early talent for mathematics, storytelling, and
+                    wordplay.
+                    <br><br>
+                    Carroll's childhood was marked by his love of reading and inventing games to entertain his siblings.
+                    His family life deeply influenced his creativity and interest in exploring imagination. These
+                    formative experiences laid the foundation for his later literary works.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab Panel: 1865: Publication of Alice's Adventures in Wonderland -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    1865: Publication of Alice's Adventures in Wonderland
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionAlice">
+                  <div class="accordion-body">
+                    <strong>Alice's Adventures in Wonderland</strong> was first published on July 4, 1865, under the
+                    pseudonym Lewis Carroll. The story originated during a boating trip in 1862, when Carroll entertained the three
+                    Liddell sisters—Lorina, Edith, and Alice—with a whimsical tale about a girl falling into a
+                    fantastical world. Alice Liddell inspired the titular character, and she encouraged Carroll to write
+                    the story down.
+                    <br><br>
+                    The book received widespread acclaim for its imaginative narrative, eccentric characters, and
+                    playful logic. It became a cornerstone of children's literature, breaking away from the moralistic
+                    tone common in 19th-century storytelling. Carroll's mathematical background also influenced the
+                    book's structure, filled with puzzles and paradoxes.
+                    <br><br>
+                    Early editions of the book featured illustrations by John Tenniel, whose iconic artwork became
+                    inseparable from the text and contributed to its success.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab Panel: 1871: Through the Looking-Glass -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    1871: Through the Looking-Glass (Sequel)
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionAlice">
+                  <div class="accordion-body">
+                    In 1871, Carroll published <strong>Through the Looking-Glass, and What Alice Found There</strong>, a
+                    sequel to <strong>Alice's Adventures in Wonderland</strong>. This book presented a mirrored world where logic
+                    and physics operated in reverse, inspired by Carroll's fascination with reflection and symmetry.
+                    <br><br>
+                    The narrative used a chessboard structure, where Alice advanced as a pawn trying to become a queen.
+                    It introduced new characters such as Tweedledee and Tweedledum, Humpty Dumpty, and the White Queen,
+                    each adding depth to Carroll's imaginative universe.
+                    <br><br>
+                    Themes of identity, transformation, and language play were further explored in this sequel. While
+                    slightly darker and more introspective than its predecessor, <strong>Through the Looking-Glass</strong> was met
+                    with similar enthusiasm and secured Carroll's reputation as a literary pioneer.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab Panel: 1898: The Death of Lewis Carroll -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    1898: The Death of Lewis Carroll
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionAlice">
+                  <div class="accordion-body">
+                    Lewis Carroll died on January 14, 1898, in Guildford, England, at the age of 65 from pneumonia
+                    following a bout of influenza. By the time of his death, Carroll had left an indelible mark on
+                    literature, mathematics, and photography.
+                    <br><br>
+                    Though Carroll is best remembered for the <strong>Alice</strong> books, his contributions to
+                    mathematics, especially in logic and geometry, were significant. His work on syllogisms and recreational
+                    mathematics influenced scholars and educators alike.
+                    <br><br>
+                    Carroll's death marked the end of a remarkable career, but his legacy endured. His
+                    <strong>Alice</strong> books remain beloved classics, translated into hundreds of languages, adapted into films, plays, and
+                    countless other forms of art. His ability to blend intellectual depth with playful storytelling
+                    continues to inspire generations of readers.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!--End Accordion -->
+
+          <!-- img Lewis Carroll -->
+          <div class="col-md-4 text-center">
+            <img src="img/LewisCarrollSelfPhoto.jpg" alt="Lewis Carroll Self Photo" class="img-fluid rounded">
+          </div> <!-- End img Lewis Carroll -->
+        </div>
+      </div>
+    </section> <!-- End About the Author, Accordion and img Lewis Carroll -->
+
+    <!-- Synopsis and Reviews -->
+    <section id="synopsis" class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Synopsis</h2>
+            <p>
+              <strong>Lewis Carroll's Alice's Adventures in Wonderland</strong> tells the story of Alice, a curious young girl who
+              follows a talking White Rabbit and tumbles down a rabbit hole into a <strong>fantastical world.</strong>
+              <br><br>
+              In Wonderland, she encounters bizarre characters like the <strong>Mad Hatter</strong>, the Cheshire Cat, and the Queen of
+              Hearts, each presenting her with absurd challenges and riddles. As Alice navigates this chaotic, dreamlike
+              world, she explores themes of identity, logic, and imagination. The story concludes when <strong>Alice awakens,
+              realizing it was all a dream</strong>, leaving her with a fresh perspective on curiosity and creativity.
+              <br><br>
+              However, <strong>Alice's journey through Wonderland</strong> also highlights the absurdity of adult authority and the
+              confusion that children often face in a world governed by arbitrary rules. Throughout her adventures, she
+              struggles with understanding who she is and how she fits into a world where logic is turned upside down.
+              Carroll uses these fantastical encounters to satirize Victorian society, questioning its rigid norms and
+              expectations.
+              <br><br>
+              The novel's play with language and logic invites readers to embrace their imagination and question the
+              limits of reality. By blending whimsical storytelling with deeper philosophical themes, <strong>Alice's Adventures</strong>
+              in Wonderland has endured as a beloved classic, resonating with both children and adults alike for its
+              imaginative spirit and its reflections on growing up.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2>Reviews</h2>
+            <p>
+              <strong>Lewis Carroll's classic</strong> is a masterpiece of fantasy literature, blending boundless imagination with rich
+              symbolic storytelling. The journey of Alice offers readers an escape into a world where logic is upended,
+              and anything is possible. Memorable characters like the eccentric <strong>Mad Hatter and the fiery Queen of Hearts
+              enrich the surreal atmosphere.</strong>
+              <br><br>
+              The book's deeper themes, such as self-discovery and questioning authority, make it resonate beyond its
+              classification as children's literature. Its whimsical humor and clever wordplay captivate readers of all
+              ages. The narrative's ability to challenge conventional thinking through its paradoxes and absurdities has
+              earned it a place in the literary canon for both young readers and adults alike.
+              <br><br>
+              What truly elevates <strong>Alice's Adventures in Wonderland</strong> is its imaginative dialogue and the playful
+              manipulation of language. Carroll's use of nonsense poetry and riddles offers not just entertainment, but
+              also subtle critiques of societal norms, offering layers of meaning that can be interpreted in various
+              ways over time.
+              <br><br>
+              In summary, <strong>Alice's Adventures in Wonderland</strong> is a delightful and enduring work that stimulates the
+              imagination while challenging conventional thinking, making it a timeless and rewarding read. Its charm
+              lies not just in its surreal storytelling, but also in its profound exploration of identity, logic, and
+              the absurdities of life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> <!-- End Synopsis and Reviews -->
+
+    <!-- Publisher -->
+    <section id="publisher" class="py-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Publisher</h2>
+            <p>
+              The publication of Alice's Adventures in Wonderland in 1865 involved a complex process, with significant
+              roles played by Lewis Carroll (Charles Lutwidge Dodgson), illustrator John Tenniel, and the publishing
+              house Macmillan & Co.
+              <br><br>
+              <strong>Printing and Issues:</strong> The first 2,000 copies were printed in Oxford, but Tenniel objected
+              to the quality of the illustrations, which led to the rejection of the entire print run. Carroll subsequently
+              ordered a new printing in London. The rejected copies were sold to D. Appleton & Co. in New York, forming
+              the "Appleton Alice," a rare edition.
+              <br><br>
+              <strong>Macmillan & Co.:</strong> Macmillan was the official publisher and handled the subsequent prints
+              of the book. Carroll self-financed the project, a common practice at the time, and Macmillan played a key role in
+              distributing the work widely. The publisher's relationship with Carroll continued with later works like
+              Through the Looking-Glass.
+              <br><br>
+              <strong>Manuscript and Legacy:</strong> Carroll initially wrote the story as a handwritten manuscript
+              titled Alice's Adventures Underground, which he gifted to Alice Liddell. Later, this was expanded and adapted for
+              publication. The original manuscript is now housed in the British Library.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <!-- img Mad Tea Party -->
+            <div class="text-center">
+              <img src="img/mad-tea-party.jpg" alt="Mad Tea Party" class="img-fluid rounded">
+            </div> <!-- End img Mad Tea Party -->
+          </div>
+        </div>
+      </div>
+    </section> <!-- End Publisher -->
+
+    <!-- Buy Now -->
+    <section id="buy" class="py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Form -->
+          <div class="col-md-6">
+            <h2 class="mb-4">Buy Alice's Adventures in Wonderland</h2>
+            <form>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" class="form-control" id="country" placeholder="Enter your country" required>
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter your Address" required>
+              </div>
+              <div class="mb-3">
+                <label for="quantity" class="form-label">Quantity</label>
+                <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" min="1" value="1"
+                  required>
+              </div>
+              <button type="submit" class="btn btn-custom w-100">Purchase</button>
+            </form>
+          </div> <!-- End Form -->
+
+          <!-- img cook-duchess-cheshire-cat-baby-and-alice -->
+          <div class="col-md-6">
+            <img src="img/cook-duchess-cheshire-cat-baby-and-alice.jpg" class="img-fluid rounded" alt="Cook, Duchess, Cheshire Cat, Baby and Alice">
+          </div> <!-- End img cook-duchess-cheshire-cat-baby-and-alice -->
+        </div>
+      </div>
+    </section> <!-- End Buy Now -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <p>&copy; 2024 Alice's Adventures in Wonderland. All rights reserved.</p>
+  </footer><!-- End Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 </html>
