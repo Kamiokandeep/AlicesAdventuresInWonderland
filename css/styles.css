@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Pacifico&display=swap');
+
+/* Custom styles for the menu */
+.navbar {
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+    background-color: white !important;
+}
+
+.navbar-brand {
+    font-size: 1.9rem;
+}
+  
+.navbar-nav .nav-link {
+    font-size: 1.4rem; 
+    margin: 0 15px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #408394;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* Custom styles for the main */
+/* To ensure the Carousel doesn't fall below the menu. */
+main {
+    margin-top: 100px;
+}
+  
+
+/* Custom styles for sections */
+/* To ensure the sections don't fall below the menu. */
+.py-4 {
+    padding-top: 110px !important;
+}
+
+
+/* Custom font */
+h2 {
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+
+/* Custom Styles for the Accordion */
+.accordion-header .accordion-button {
+    background-color: #408394; 
+    color: white;
+    border-radius: 0;
+}
+
+.accordion-header .accordion-button:not(.collapsed) {
+    background-color: #408394; 
+}
+
+.accordion-body {
+    background-color: #f9f9f9;
+    color: #000000; 
+}
+
+
+/* Custom styles for the form button */
+.btn-custom {
+    background-color: #408394;
+    border-color: #408394;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #49b1c6;
+    border-color: #49b1c6;
+    color: white;
+}
+
+
+/* Custom styles for the footer */
+.footer-custom {
+    background-color: #408394;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
